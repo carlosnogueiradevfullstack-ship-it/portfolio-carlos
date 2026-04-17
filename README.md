@@ -1,41 +1,29 @@
-# Portfólio Premium - Carlos Nogueira
+# Portfólio Premium 2.0 - Carlos Nogueira
 
-Este projeto é um portfólio premium feito em **HTML + CSS + JavaScript**, pronto para abrir no VS Code e publicar online.
+## Arquivos
+- `index.html` → estrutura e conteúdo
+- `style.css` → visual e responsividade
+- `script.js` → interações, filtros, modais, animações e tema
 
-## Estrutura
-- `index.html` -> estrutura do site
-- `style.css` -> visual e responsividade
-- `script.js` -> interações e animações
+## Como testar
+Abra a pasta no VS Code e execute o `index.html` com a extensão Live Server.
 
-## Como abrir
-1. Extraia a pasta do projeto.
-2. Abra a pasta no VS Code.
-3. Clique duas vezes em `index.html` ou use a extensão **Live Server**.
+## Como publicar atualizando o GitHub
+No terminal dentro da pasta do projeto:
 
-## Como editar
-- Nome, textos e contatos: `index.html`
-- Cores, estilos e layout: `style.css`
-- Interações e animações: `script.js`
-- (Se eu quiser editar o site no github
-     git add
-             git commit -m "Ataulização do Portfólio"
-                                                      git push
-)
+```bash
+git add .
+git commit -m "Atualizando portfolio 2.0"
+git push
+```
 
-
-## Contato atual no projeto
-- E-mail: `carlosnogueirasilva2505@gmail.com`
-- WhatsApp: `11987769393`
-
-## Projetos incluídos
-1. **AtendeAI Pro**
-2. **Gestor Finance**
-3. **Lux Barber Studio**
-
-## Deploy simples
-Você pode subir em:
-- GitHub Pages
-- Netlify
-- Vercel
-
-Como é um projeto estático, qualquer uma dessas opções funciona bem.
+## O que foi melhorado na v2.0
+- Hero mais premium
+- Efeito de digitação no bloco de código
+- Seção de serviços
+- Timeline de experiência
+- Cards mais fortes
+- Botão flutuante de WhatsApp
+- Projetos com previews visuais
+- Depoimentos de posicionamento
+- Melhor acabamento visual em desktop e mobile
