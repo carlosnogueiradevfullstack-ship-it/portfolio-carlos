@@ -16,6 +16,12 @@ Este projeto é um portfólio premium feito em **HTML + CSS + JavaScript**, pron
 - Nome, textos e contatos: `index.html`
 - Cores, estilos e layout: `style.css`
 - Interações e animações: `script.js`
+- (Se eu quiser editar o site no github
+     git add
+             git commit -m "Ataulização do Portfólio"
+                                                      git push
+)
+
 
 ## Contato atual no projeto
 - E-mail: `carlosnogueirasilva2505@gmail.com`
