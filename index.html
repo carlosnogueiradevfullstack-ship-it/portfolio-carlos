@@ -3,128 +3,362 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carlos.dev</title>
+  <title>Carlos.dev | Portfólio</title>
+  <meta
+    name="description"
+    content="Portfólio de Carlos Nogueira, desenvolvedor fullstack focado em sites profissionais, sistemas web, automações e soluções com IA."
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="bg-grid"></div>
 
-  <header class="topbar">
-    <div class="brand">Carlos<span>.dev</span></div>
+  <header class="header">
+    <div class="container header-content">
+      <a href="#home" class="brand">Carlos<span>.dev</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+        ☰
+      </button>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="projects-grid">
-      <!-- Projeto 1 -->
-      <article class="project-card">
-        <div class="project-preview preview-ai">
-          <div class="preview-chip">Atendimento com IA</div>
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="hero-badge">Desenvolvedor Fullstack • Automação • IA</span>
 
-          <div class="preview-ai-layout">
-            <div class="preview-ai-sidebar"></div>
+          <h1>
+            Eu crio <span>sites, sistemas e soluções inteligentes</span>
+            para negócios que querem crescer de verdade.
+          </h1>
 
-            <div class="preview-ai-lines">
-              <div class="line line-xl"></div>
-              <div class="line line-lg"></div>
-              <div class="line line-md"></div>
+          <p class="hero-description">
+            Desenvolvimento de landing pages, sistemas web, integrações com APIs,
+            automações, dashboards, chatbots e soluções modernas com foco em resultado,
+            performance e visual profissional.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn-secondary" href="#contato">Falar comigo</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong data-count="10">0</strong>
+              <span>Projetos criados</span>
+            </div>
+            <div class="stat-card">
+              <strong data-count="100">0</strong>
+              <span>Foco em performance</span>
+            </div>
+            <div class="stat-card">
+              <strong data-count="24">0</strong>
+              <span>Suporte e evolução</span>
             </div>
           </div>
         </div>
 
-        <div class="project-content">
-          <span class="project-tag">IA + Sistema</span>
-          <h2>AtendeAI Pro</h2>
+        <div class="hero-panel reveal">
+          <div class="panel-card">
+            <div class="panel-top">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+
+            <div class="panel-body">
+              <div class="code-line w-90"></div>
+              <div class="code-line w-70"></div>
+              <div class="code-line w-80"></div>
+              <div class="code-line w-60"></div>
+
+              <div class="panel-boxes">
+                <div class="mini-box active"></div>
+                <div class="mini-box"></div>
+                <div class="mini-box"></div>
+              </div>
+
+              <div class="floating-card">
+                <span>Projeto em produção</span>
+                <strong class="typing" data-text="Interface moderna + backend funcional + automação inteligente"></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">Sobre mim</span>
+          <h2>Desenvolvo soluções digitais com foco em visual, organização e resultado</h2>
           <p>
-            Plataforma de atendimento inteligente com histórico, organização de
-            contatos, respostas rápidas e painel de gestão.
+            Sou Carlos Nogueira, desenvolvedor fullstack com atuação em interfaces modernas,
+            sistemas administrativos, integrações, automações e projetos com inteligência artificial.
+            Meu objetivo é transformar ideias em soluções profissionais, funcionais e prontas para uso real.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <h3>Visão de negócio</h3>
+            <p>
+              Não faço só “site bonito”. Estruturo páginas e sistemas pensando em conversão,
+              organização, experiência do usuário e presença profissional.
+            </p>
+          </div>
+
+          <div class="about-card reveal">
+            <h3>Desenvolvimento completo</h3>
+            <p>
+              Posso atuar no front-end, no back-end, integrações com APIs, automação de tarefas
+              e criação de sistemas personalizados para empresas e profissionais.
+            </p>
+          </div>
+
+          <div class="about-card reveal">
+            <h3>Evolução constante</h3>
+            <p>
+              Busco sempre melhorar arquitetura, design, performance e usabilidade para entregar
+              algo mais premium, moderno e confiável.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">Serviços</span>
+          <h2>O que eu posso desenvolver para você</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">◉</div>
+            <h3>Landing Pages</h3>
+            <p>
+              Páginas profissionais para divulgar serviços, captar clientes e fortalecer sua presença online.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">◎</div>
+            <h3>Sistemas Web</h3>
+            <p>
+              Sistemas administrativos, painéis internos, cadastro de clientes, histórico, gestão e relatórios.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">⬢</div>
+            <h3>Automação</h3>
+            <p>
+              Integrações, fluxos automáticos, notificações, organização de processos e redução de trabalho manual.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">✦</div>
+            <h3>Chatbots e IA</h3>
+            <p>
+              Soluções com IA para atendimento, organização de informações, respostas e apoio ao negócio.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">Projetos</span>
+          <h2>Alguns projetos em destaque</h2>
+          <p>
+            Exemplos de soluções que podem ser adaptadas para empresas, profissionais autônomos e negócios locais.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-preview preview-ai">
+              <div class="preview-chip">Atendimento com IA</div>
+
+              <div class="preview-ai-layout">
+                <div class="preview-ai-sidebar"></div>
+
+                <div class="preview-ai-lines">
+                  <div class="line line-xl"></div>
+                  <div class="line line-lg"></div>
+                  <div class="line line-md"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-tag">IA + Sistema</span>
+              <h3>AtendeAI Pro</h3>
+              <p>
+                Plataforma de atendimento inteligente com histórico, organização de contatos,
+                respostas rápidas e painel de gestão.
+              </p>
+
+              <div class="project-stack">
+                <span>Dashboard</span>
+                <span>WhatsApp/API</span>
+                <span>Atendimento</span>
+              </div>
+
+              <a href="#contato" class="project-link">Quero algo assim</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-preview preview-finance">
+              <div class="preview-bars">
+                <div class="bar small"></div>
+                <div class="bar medium"></div>
+                <div class="bar large"></div>
+                <div class="bar small"></div>
+              </div>
+
+              <div class="preview-cards">
+                <div class="mini-panel"></div>
+                <div class="mini-panel"></div>
+                <div class="mini-panel"></div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-tag">Sistema Web</span>
+              <h3>Gestor Finance</h3>
+              <p>
+                Sistema administrativo para controle financeiro, tarefas, clientes,
+                indicadores e organização operacional.
+              </p>
+
+              <div class="project-stack">
+                <span>Financeiro</span>
+                <span>Relatórios</span>
+                <span>Gestão</span>
+              </div>
+
+              <a href="#contato" class="project-link">Quero algo assim</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-preview preview-site">
+              <div class="site-line"></div>
+              <div class="site-banner"></div>
+              <div class="site-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-tag">Site Premium</span>
+              <h3>Lux Barber Studio</h3>
+              <p>
+                Landing page premium para negócio local, feita para fortalecer a marca,
+                gerar autoridade e aumentar contatos.
+              </p>
+
+              <div class="project-stack">
+                <span>Landing Page</span>
+                <span>UI/UX</span>
+                <span>Conversão</span>
+              </div>
+
+              <a href="#contato" class="project-link">Quero algo assim</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tecnologias">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">Tecnologias</span>
+          <h2>Ferramentas que uso no desenvolvimento</h2>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-item reveal">HTML</div>
+          <div class="tech-item reveal">CSS</div>
+          <div class="tech-item reveal">JavaScript</div>
+          <div class="tech-item reveal">Node.js</div>
+          <div class="tech-item reveal">React</div>
+          <div class="tech-item reveal">APIs REST</div>
+          <div class="tech-item reveal">Automação</div>
+          <div class="tech-item reveal">IA</div>
+          <div class="tech-item reveal">Git/GitHub</div>
+          <div class="tech-item reveal">Responsividade</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <div class="contact-box reveal">
+          <span class="section-label">Contato</span>
+          <h2>Vamos tirar sua ideia do papel</h2>
+          <p>
+            Se você precisa de um site profissional, sistema, automação ou solução com IA,
+            posso desenvolver algo sob medida para o seu objetivo.
           </p>
 
-          <div class="tech-tags">
-            <span>Dashboard</span>
-            <span>WhatsApp/API</span>
-            <span>Atendimento</span>
+          <div class="contact-actions">
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/5511987769393"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chamar no WhatsApp
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="mailto:carlosnogueirasilva2505@gmail.com"
+            >
+              Enviar e-mail
+            </a>
           </div>
 
-          <button class="project-btn">Ver detalhes</button>
-        </div>
-      </article>
-
-      <!-- Projeto 2 -->
-      <article class="project-card">
-        <div class="project-preview preview-system">
-          <div class="preview-title-inline">
-            <strong>Sistema Financeiro</strong>
-            <span>Controle, relatórios e gestão operacional</span>
-          </div>
-
-          <div class="preview-system-bars">
-            <div class="bar bar-sm"></div>
-            <div class="bar bar-md"></div>
-            <div class="bar bar-lg"></div>
-            <div class="bar bar-sm"></div>
-          </div>
-
-          <div class="preview-system-cards">
-            <div></div>
-            <div></div>
-            <div></div>
+          <div class="contact-infos">
+            <span>WhatsApp: (11) 98776-9393</span>
+            <span>E-mail: carlosnogueirasilva2505@gmail.com</span>
           </div>
         </div>
-
-        <div class="project-content">
-          <span class="project-tag">Sistema Web</span>
-          <h2>Gestor Finance</h2>
-          <p>
-            Sistema administrativo para controle financeiro, tarefas, clientes,
-            indicadores e organização operacional.
-          </p>
-
-          <div class="tech-tags">
-            <span>Financeiro</span>
-            <span>Relatórios</span>
-            <span>Gestão</span>
-          </div>
-
-          <button class="project-btn">Ver detalhes</button>
-        </div>
-      </article>
-
-      <!-- Projeto 3 -->
-      <article class="project-card">
-        <div class="project-preview preview-site">
-          <div class="preview-title-inline">
-            <strong>Site para Negócio</strong>
-            <span>Presença online premium e conversão</span>
-          </div>
-
-          <div class="preview-site-top"></div>
-          <div class="preview-site-hero"></div>
-
-          <div class="preview-site-grid">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-
-        <div class="project-content">
-          <span class="project-tag">Site Premium</span>
-          <h2>Lux Barber Studio</h2>
-          <p>
-            Landing page premium para negócio local, feita para fortalecer a
-            marca e gerar mais agendamentos.
-          </p>
-
-          <div class="tech-tags">
-            <span>Landing Page</span>
-            <span>UI/UX</span>
-            <span>Conversão</span>
-          </div>
-
-          <button class="project-btn">Ver detalhes</button>
-        </div>
-      </article>
+      </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Carlos.dev — Portfólio profissional</p>
+      <a href="#home">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
