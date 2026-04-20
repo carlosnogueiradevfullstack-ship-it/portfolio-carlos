@@ -939,4 +939,231 @@ img {
     flex-direction: column;
     text-align: center;
   }
+
+/* HERO IMPACT PANEL */
+.impact-panel .panel-body {
+  position: relative;
+}
+
+.impact-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(110, 231, 249, 0.16);
+  background: rgba(17, 36, 68, 0.72);
+  color: var(--cyan);
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.impact-lines {
+  margin-bottom: 22px;
+}
+
+.impact-metrics {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.impact-metric,
+.impact-mini {
+  border-radius: 18px;
+  border: 1px solid rgba(130, 170, 255, 0.1);
+  background: linear-gradient(180deg, rgba(19, 35, 67, 0.96), rgba(10, 20, 40, 0.96));
+}
+
+.impact-metric {
+  min-height: 120px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.impact-metric::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(110, 231, 249, 0.18), transparent 65%);
+}
+
+.impact-metric span,
+.impact-mini span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.impact-metric strong {
+  margin-top: 8px;
+  font-size: 2rem;
+  color: var(--cyan);
+  letter-spacing: -0.04em;
+}
+
+.impact-metric small {
+  margin-top: 8px;
+  color: #dbe7ff;
+  font-size: 0.92rem;
+}
+
+.impact-side {
+  display: grid;
+  gap: 14px;
+}
+
+.impact-mini {
+  min-height: 53px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.impact-mini strong {
+  margin-top: 4px;
+  font-size: 1rem;
+  color: #f4f7ff;
+}
+
+.impact-card {
+  margin-top: 18px;
+}
+
+/* TERCEIRO CARD MAIS PREENCHIDO */
+.premium-site-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.site-topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-pill {
+  width: 130px;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(160, 180, 255, 0.18);
+}
+
+.site-pill.small {
+  width: 72px;
+}
+
+.site-hero-card {
+  padding: 18px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(46, 64, 111, 0.36), rgba(30, 44, 78, 0.28));
+  border: 1px solid rgba(140, 170, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.site-hero-card::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: -20px;
+  width: 110px;
+  height: 110px;
+  background: radial-gradient(circle, rgba(110, 231, 249, 0.14), transparent 65%);
+}
+
+.site-hero-line {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(180, 195, 255, 0.12);
+  margin-bottom: 12px;
+}
+
+.site-hero-line.xl { width: 92%; }
+.site-hero-line.lg { width: 82%; }
+.site-hero-line.md { width: 58%; }
+
+.site-cta-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.site-cta {
+  width: 88px;
+  height: 34px;
+  border-radius: 12px;
+  background: rgba(140, 170, 255, 0.14);
+}
+
+.site-cta.primary {
+  background: linear-gradient(135deg, rgba(110, 231, 249, 0.48), rgba(124, 58, 237, 0.28));
+}
+
+.site-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.site-metric-box {
+  min-height: 64px;
+  padding: 12px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(34, 50, 90, 0.94), rgba(21, 33, 63, 0.94));
+  border: 1px solid rgba(135, 165, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.site-metric-box span {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.site-metric-box strong {
+  margin-top: 4px;
+  font-size: 1rem;
+  color: #f4f7ff;
+}
+
+/* ESCONDER infos se ainda existir */
+.contact-infos {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .impact-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .site-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .site-cta-row {
+    flex-wrap: wrap;
+  }
+
+  .site-pill {
+    width: 100px;
+  }
+
+  .site-pill.small {
+    width: 56px;
+  }
+}
+
 }
